@@ -1,0 +1,159 @@
+.moreInfoContainer:nth-child(even) {
+  flex-direction: row-reverse !important;
+}
+
+.moreInfoBody {
+  margin-bottom: 20px;
+  
+}
+
+.moreInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 5rem;
+  width: 100%;
+}
+
+.moreInfoContainer h3 {
+  font-size: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1.2rem;
+ 
+}
+
+.textContainer {
+  max-width: 50%;
+}
+
+.textContainer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.imgContainer {
+  align-self: center;
+  max-width: 360px;
+}
+
+.imgContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/*  Animation */
+.moreInfoContainer {
+  animation-delay: 5s;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MediaQueries */
+
+/* Small devices, less than 476px */
+@media (max-width: 476px) {
+  .textContainer {
+    max-width: 85% !important;
+  }
+  .moreInfoContainer{
+    gap: 3rem;
+  }
+  .moreInfoContainer h3{
+    margin-top: 2rem;
+  }
+  .textContainer h3 {
+    margin-top: 30px;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .textContainer {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .textContainer h3 {
+    margin-top: 30px;
+  }
+
+  .moreInfoContainer h3 {
+    font-size: 1.4rem;
+  }
+ 
+  
+  .moreInfoContainer{
+    gap: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .textContainer{
+    text-align: left;
+  }
+  .textContainer h3 {
+    margin-top: 30px;
+  }
+  .moreInfoContainer{
+    gap: 2rem;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .textContainer{
+    text-align: left;
+  }
+  .textContainer h3 {
+    margin-top: 30px;
+  }
+  
+
+}

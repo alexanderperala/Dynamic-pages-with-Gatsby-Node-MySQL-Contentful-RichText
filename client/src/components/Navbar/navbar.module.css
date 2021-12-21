@@ -1,0 +1,53 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  padding: 0 18px;
+}
+
+.menuItem {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  color: rgba(70, 70, 70, 0.815);
+}
+
+.menuItem:hover {
+  color: rgba(70, 70, 70, 0.815);
+}
+
+[aria-current]:not([aria-current="false"]) {
+  white-space: nowrap;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  color: rgba(27, 27, 27, 0.815);
+  text-decoration: none;
+  cursor: default;
+  font-weight: 500;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+  .navbarLogo {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menuItem {
+    text-align: center;
+    padding: 0;
+  }
+
+  .subItem {
+    padding: 0 18px;
+  }
+}

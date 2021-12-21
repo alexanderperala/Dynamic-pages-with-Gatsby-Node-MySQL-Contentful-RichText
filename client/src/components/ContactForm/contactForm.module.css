@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.formWrapper {
+  width: 35%;
+}
+.formTitle {
+  color: rgb(26, 26, 26);
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+.formTitle,
+.subTitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.subTitle {
+  padding-top: 0.6rem;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.formContainer form > label {
+  margin-bottom: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formContainer form input {
+  height: 35px;
+  border: solid 1px grey;
+}
+
+.formContainer form input::placeholder {
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+.inputfield:focus {
+  border: 255, 151, 28, 0.8;
+  box-shadow: 0px 0px 3px 5px rgba(255, 153, 28, 0.349);
+}
+
+/* Removes arrows from input[number]  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.radioBtns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.radio.checked {
+  border: solid 2px blue;
+}
+
+.subTitleRadio {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.radio {
+  margin-right: 5px;
+}
+
+.radioLabel {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.radio:hover,
+.radioLabel:hover {
+  cursor: pointer;
+}
+
+.radioBtns > label > input {
+  padding-right: 10px;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+input:focus {
+  outline: none;
+}
+
+.formSubmitBtn {
+  margin-top: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 10px;
+  border: none;
+  background-color: rgb(99, 189, 58);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  border-radius: 3px;
+}
+
+.formSubmitBtn:hover {
+  background-color: rgba(116, 175, 88, 0.863);
+  box-shadow: rgba(0, 0, 0, 0.37) 0px 0px 5px 1px;
+  cursor: pointer;
+}
+
+.formFeedback {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  border: solid rgba(21, 202, 5, 0.822) 2px;
+  background-color: rgba(190, 253, 190, 0.61);
+  border-radius: 3px;
+  padding: 10px;
+  animation: fade-in 2s;
+}
+
+/* Animation -> FADE-IN */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* MediaQueries - Starts here */
+
+/* Small devices (phones, less than 476px) */
+@media (max-width: 475.98px) {
+
+
+  .formTitle {
+    font-size: 1.3rem;
+  }
+
+  .subTitle {
+    margin-bottom: 1.4rem;
+  }
+
+  .inputfield {
+    height: 42px !important;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .formWrapper {
+    width: 65% !important;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .formWrapper {
+    width: 60%;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .formWrapper {
+    width: 50%;
+  }
+}

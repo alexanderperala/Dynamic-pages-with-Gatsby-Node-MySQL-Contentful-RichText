@@ -1,0 +1,58 @@
+.centerHeading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 20px auto 10px;
+}
+
+.centerParagraph {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.centerImg {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* MediaQueries */
+
+/* Small devices, less than 476px */
+@media (max-width: 476px) {
+  .centerParagraph {
+    text-align: left;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+  .centerParagraph {
+    text-align: left;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .centerParagraph {
+    max-width: 90%;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .centerParagraph {
+    text-align: left;
+    margin: 0 auto;
+  }
+}

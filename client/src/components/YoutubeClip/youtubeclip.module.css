@@ -1,0 +1,20 @@
+.videoWrapper {
+  max-width: 100%;
+  padding: 0 50px 20px 50px;
+}
+
+.iframeContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.iframe {
+  max-width: 100%;
+}
+
+.videoWrapper h2 {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  color: rgb(41, 41, 41);
+}
